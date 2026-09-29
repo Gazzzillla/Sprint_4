@@ -84,9 +84,7 @@ public class OrderPage {
     public void setColour(String colour) {
         if ("black".equals(colour)) {
             driver.findElement(blackColour).click();
-        }
-
-        if ("grey".equals(colour)) {
+        } else if ("grey".equals(colour)) {
             driver.findElement(greyColour).click();
         }
     }
